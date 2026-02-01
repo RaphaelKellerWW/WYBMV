@@ -38,8 +38,13 @@ h1 {
 .buttons {
     position: relative;
     width: 100%;
-    height: 140px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px; /* kleiner Abstand */
 }
+
 
 button {
     border: none;
@@ -128,6 +133,10 @@ const buttonArea = document.getElementById("buttonArea");
 const card = document.getElementById("card");
 const music = document.getElementById("bgMusic");
 const hint = document.getElementById("soundHint");
+
+noBtn.style.left = "50%";
+noBtn.style.top = "60px";
+noBtn.style.transform = "translateX(-50%) scale(1)";
 
 let noScale = 1;
 let yesScale = 1;
